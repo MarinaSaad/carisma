@@ -1,0 +1,63 @@
+<!--<div class="container">
+    <table class="table table-hover">
+        <tr>
+            <td>productName</td>
+            <td>productCode</td>
+            <td>price</td>
+            <td>starRating</td>
+        </tr>
+        <tr *ngFor="let p of products">
+            <td>{{p.productName}}</td>
+            <td>{{p.productCode}}</td>
+            <td>{{p.price}}</td>
+            <td>{{p.starRating}}</td>
+        </tr>
+    </table>
+</div>-->
+
+
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        Product List
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class=col-md-2>Filter By :</div>
+            <div class=col-md-4>
+                <input type="text" [(ngModel)]='listFilter'placeholder="search "/>
+                
+            </div>
+
+            <div class="row">
+                <div class=col-md-6>
+                    <h3>filter by : {{listFilter}}</h3>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr >
+                        <!-- <th>
+                                <button class="btn btn-primary"> Show Img</button>
+                            </th> -->
+                            <th>Product</th>
+                            <th>Code</th>
+                            <th>Price</th>
+                            <th>Rating</th>
+                        </tr>
+                    </thead>
+                        <tr *ngFor="let p of products | filter : listFilter ">
+                            <!-- <tr> | filter : listFilter" (click)="selected = p.productName</tr>-->
+                                        
+                            <td>{{p.productName}}</td>
+                            <td>{{p.productCode}}</td>
+                            <td>{{p.price|currency:'USD' : true}}</td>
+                            <td>{{p.starRating}}</td>
+                        </tr>
+                    
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+# Project Title
+project Managment
+
+## Built With
+* Angular - TypeScript-based open-source web application framework 
+       1) Product component
+       
+       2) pipes : filter character on search (input text)
+                     : currency $ in column price 
+       
+       3)Decorators : @Component()
+	            : @NgModule()
+
+       
+* Bootstrap -popular front-end component library.
+* Css - language that describes the style of an HTML document.
+
+
+### Technique : Two way Binding : to send a value from Component to template, and                                                          sends value changes in the template to the component
+
+
+                         : Interpolation : to render the bound value to the Component’s template
+                         
+                         :  linked Template
+                          
+                         : Ngfor : to loop in products
+                        

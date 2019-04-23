@@ -1,0 +1,20 @@
+[
+    {
+        "id":1,
+        "name": "hamada",
+        "age": 2,
+        "address": {
+            "city": "cairo",
+            "country": "Egypt"
+        }
+    },
+    {
+        "id":2,
+        "name": "koko",
+        "age": 0.57376,
+        "address": {
+            "city": "alex",
+            "country": "Egypt"
+        }
+    }
+]
